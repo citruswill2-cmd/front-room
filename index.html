@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FRONT ROOM — first page, then the window</title>
+  <meta name="description" content="First HTML file you own when you decide to start a business. Plus a night window that puts other live sites where people can see them." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Oswald:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            void: "#05060A",
+            pane: "#0B0D12",
+            frost: "#12151D",
+            mist: "#7A8499",
+            line: "#4D8BFF",
+            heat: "#FF2B3A",
+            paper: "#EEF2F8"
+          },
+          fontFamily: {
+            display: ["Oswald", "Impact", "sans-serif"],
+            serif: ["Source Serif 4", "Georgia", "serif"],
+            mono: ["IBM Plex Mono", "ui-monospace", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #05060A; color: #EEF2F8; }
+    .reveal { opacity: 0; transform: translateY(14px); }
+    .pane-cut {
+      background: linear-gradient(#0B0D12, #0B0D12) padding-box,
+                  linear-gradient(135deg, #4D8BFF55, transparent 42%, #FF2B3A33) border-box;
+      border: 1px solid transparent;
+    }
+    .hair { background-image: repeating-linear-gradient(90deg, #ffffff08 0 1px, transparent 1px 28px); }
+  </style>
+</head>
+<body class="bg-void text-paper font-serif antialiased">
+  <a href="#start" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50 focus:bg-line focus:text-void focus:px-3 focus:py-2 focus:font-mono focus:text-xs">Skip to brief</a>
+
+  <header class="sticky top-0 z-40 border-b border-white/5 bg-void/85 backdrop-blur">
+    <div class="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
+      <a href="#top" class="font-mono text-[11px] uppercase tracking-[0.28em] text-mist hover:text-paper">Front Room</a>
+      <nav class="flex gap-5 font-mono text-[11px] uppercase tracking-[0.2em] text-mist">
+        <a class="hover:text-line" href="#work">Work</a>
+        <a class="hover:text-line" href="#window">Window</a>
+        <a class="hover:text-heat" href="#start">Start</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="relative overflow-hidden">
+      <div class="pointer-events-none absolute inset-0 hair opacity-40" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute -left-16 top-8 h-72 w-72 rounded-full bg-line/15 blur-3xl" aria-hidden="true"></div>
+      <div class="pointer-events-none absolute right-0 top-32 h-80 w-80 rounded-full bg-heat/10 blur-3xl" aria-hidden="true"></div>
+      <div class="mx-auto max-w-5xl px-5 pb-16 pt-16 md:pt-24">
+        <p class="reveal font-mono text-[11px] uppercase tracking-[0.32em] text-line">Utah · one file · no rent</p>
+        <h1 class="reveal mt-5 max-w-3xl font-display text-5xl uppercase leading-[0.9] tracking-tight text-paper md:text-7xl">
+          Open the<br />front room.
+        </h1>
+        <p class="reveal mt-7 max-w-xl text-lg leading-relaxed text-mist md:text-xl">
+          You decided to start. FRONT ROOM writes the first page with your name on it — then puts other live sites in the window so they stop sitting quiet. Built for modern young adults and adults who do not want a deck before a door.
+        </p>
+        <div class="reveal mt-8 flex flex-wrap gap-3">
+          <a href="#start" class="inline-flex items-center bg-heat px-5 py-3 font-display text-sm uppercase tracking-[0.18em] text-paper hover:brightness-110">Send one paragraph</a>
+          <a href="#window" class="inline-flex items-center border border-line/50 px-5 py-3 font-display text-sm uppercase tracking-[0.18em] text-line hover:bg-line hover:text-void">Look through the glass</a>
+        </div>
+        <p class="reveal mt-6 font-mono text-[11px] uppercase tracking-[0.22em] text-mist">Tailwind · light anime.js · ~0.5s · you keep the file</p>
+      </div>
+    </section>
+
+    <section id="work" class="border-t border-white/5 bg-pane">
+      <div class="mx-auto grid max-w-5xl gap-6 px-5 py-16 md:grid-cols-2">
+        <article class="reveal pane-cut bg-frost p-6 md:p-8">
+          <p class="font-mono text-[11px] uppercase tracking-[0.28em] text-heat">Lane A · first page</p>
+          <h2 class="mt-3 font-display text-3xl uppercase tracking-tight">A file you own</h2>
+          <p class="mt-4 leading-relaxed text-mist">
+            One paragraph in. One production HTML file out. No CMS, no login wall, no monthly tax on your own words. Drop it on Vercel. Change a line when the business changes. This is the door, not the franchise kit.
+          </p>
+          <ol class="mt-6 space-y-2 font-mono text-xs uppercase tracking-[0.16em] text-paper/85">
+            <li>01 · Say what you sell, and who it is for</li>
+            <li>02 · Get a single file with your name on it</li>
+            <li>03 · Host it. Nobody rents the words back</li>
+          </ol>
+        </article>
+        <article class="reveal pane-cut bg-frost p-6 md:p-8">
+          <p class="font-mono text-[11px] uppercase tracking-[0.28em] text-line">Lane B · the window</p>
+          <h2 class="mt-3 font-display text-3xl uppercase tracking-tight">Other rooms, lit</h2>
+          <p class="mt-4 leading-relaxed text-mist">
+            Sites that are already up still go quiet. The window bills them under one masthead. Blue is a public URL. Red is studio heat. Gray is waiting on its own live project.
+          </p>
+          <p class="mt-6 text-paper">
+            For the person who just decided — and for the site that already exists but nobody walks past.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="window" class="border-t border-white/5">
+      <div class="mx-auto max-w-5xl px-5 py-16">
+        <div class="reveal flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <p class="font-mono text-[11px] uppercase tracking-[0.28em] text-line">Tonight’s window</p>
+            <h2 class="mt-2 font-display text-4xl uppercase tracking-tight md:text-5xl">Live rooms</h2>
+          </div>
+          <p class="font-mono text-[11px] uppercase tracking-[0.16em] text-mist">Blue live · red studio · gray not public yet</p>
+        </div>
+
+        <ul class="mt-10 divide-y divide-white/5 border-y border-white/5">
+          <li class="reveal grid gap-2 py-5 sm:grid-cols-[88px_1fr_auto] sm:items-center">
+            <span class="font-mono text-[11px] uppercase tracking-[0.22em] text-line">Live</span>
+            <div>
+              <a class="font-display text-2xl uppercase tracking-tight text-paper hover:text-line" href="https://iris0nyx.com" rel="noopener">Iris Onyx</a>
+              <p class="mt-1 text-sm text-mist">Goth pop from Utah. Softest knife. Own room.</p>
+            </div>
+            <a class="font-mono text-[11px] uppercase tracking-[0.16em] text-line" href="https://iris0nyx.com" rel="noopener">iris0nyx.com</a>
+          </li>
+          <li class="reveal grid gap-2 py-5 sm:grid-cols-[88px_1fr_auto] sm:items-center">
+            <span class="font-mono text-[11px] uppercase tracking-[0.22em] text-line">Live</span>
+            <div>
+              <a class="font-display text-2xl uppercase tracking-tight text-paper hover:text-line" href="https://dnc-computerz.vercel.app" rel="noopener">DNC Computerz</a>
+              <p class="mt-1 text-sm text-mist">Dee’s lot. Towers, laptops, parts on the bench.</p>
+            </div>
+            <a class="font-mono text-[11px] uppercase tracking-[0.16em] text-line" href="https://dnc-computerz.vercel.app" rel="noopener">dnc-computerz.vercel.app</a>
+          </li>
+          <li class="reveal grid gap-2 py-5 sm:grid-cols-[88px_1fr_auto] sm:items-center">
+            <span class="font-mono text-[11px] uppercase tracking-[0.22em] text-heat">Studio</span>
+            <div>
+              <a class="font-display text-2xl uppercase tracking-tight text-paper hover:text-heat" href="https://sameweekhq.vercel.app" rel="noopener">REDLINE</a>
+              <p class="mt-1 text-sm text-mist">The shop that writes these drafts. sameweekhq currently serves it.</p>
+            </div>
+            <a class="font-mono text-[11px] uppercase tracking-[0.16em] text-heat" href="https://sameweekhq.vercel.app" rel="noopener">sameweekhq.vercel.app</a>
+          </li>
+          <li class="reveal grid gap-2 py-5 sm:grid-cols-[88px_1fr_auto] sm:items-center">
+            <span class="font-mono text-[11px] uppercase tracking-[0.22em] text-line">Live</span>
+            <div>
+              <a class="font-display text-2xl uppercase tracking-tight text-paper hover:text-line" href="https://daytape.vercel.app" rel="noopener">Daytape</a>
+              <p class="mt-1 text-sm text-mist">Podcast and vlog first-draft. Already on its own URL.</p>
+            </div>
+            <a class="font-mono text-[11px] uppercase tracking-[0.16em] text-line" href="https://daytape.vercel.app" rel="noopener">daytape.vercel.app</a>
+          </li>
+          <li class="reveal grid gap-2 py-5 sm:grid-cols-[88px_1fr_auto] sm:items-center">
+            <span class="font-mono text-[11px] uppercase tracking-[0.22em] text-mist">Wait</span>
+            <div>
+              <a class="font-display text-2xl uppercase tracking-tight text-paper hover:text-mist" href="https://github.com/citruswill2-cmd/sameweek" rel="noopener">Sameweek</a>
+              <p class="mt-1 text-sm text-mist">On GitHub. sameweek.vercel.app currently serves CAST — needs its own live project.</p>
+            </div>
+            <a class="font-mono text-[11px] uppercase tracking-[0.16em] text-mist" href="https://github.com/citruswill2-cmd/sameweek" rel="noopener">github / sameweek</a>
+          </li>
+          <li class="reveal grid gap-2 py-5 sm:grid-cols-[88px_1fr_auto] sm:items-center">
+            <span class="font-mono text-[11px] uppercase tracking-[0.22em] text-mist">Wait</span>
+            <div>
+              <a class="font-display text-2xl uppercase tracking-tight text-paper hover:text-mist" href="https://github.com/citruswill2-cmd/laughline" rel="noopener">Laughline</a>
+              <p class="mt-1 text-sm text-mist">Comedy first-draft. laughline.vercel.app is 404 until that project is public.</p>
+            </div>
+            <a class="font-mono text-[11px] uppercase tracking-[0.16em] text-mist" href="https://github.com/citruswill2-cmd/laughline" rel="noopener">github / laughline</a>
+          </li>
+          <li class="reveal grid gap-2 py-5 sm:grid-cols-[88px_1fr_auto] sm:items-center">
+            <span class="font-mono text-[11px] uppercase tracking-[0.22em] text-heat">Open</span>
+            <div>
+              <a class="font-display text-2xl uppercase tracking-tight text-paper hover:text-heat" href="#start">Your name</a>
+              <p class="mt-1 text-sm text-mist">Empty pane. Next first file goes here.</p>
+            </div>
+            <a class="font-mono text-[11px] uppercase tracking-[0.16em] text-heat" href="#start">take the pane</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="start" class="border-t border-white/5 bg-pane">
+      <div class="mx-auto grid max-w-5xl gap-10 px-5 py-16 md:grid-cols-[1.1fr_0.9fr]">
+        <div class="reveal">
+          <p class="font-mono text-[11px] uppercase tracking-[0.28em] text-heat">Front desk</p>
+          <h2 class="mt-2 font-display text-4xl uppercase tracking-tight md:text-5xl">One paragraph.</h2>
+          <p class="mt-5 max-w-md leading-relaxed text-mist">
+            Name what you want to open. Who it is for. What should be on the first page. FRONT ROOM sends that paragraph to Chris and you get a file you own.
+          </p>
+          <p class="mt-4 text-sm text-mist">Opens mail to citruswill2@gmail.com. No form host. No list.</p>
+        </div>
+        <form class="reveal pane-cut bg-frost p-6" id="brief" onsubmit="return sendBrief(event)">
+          <label for="para" class="font-mono text-[11px] uppercase tracking-[0.22em] text-mist">The paragraph</label>
+          <textarea id="para" name="para" required rows="7" class="mt-3 w-full resize-y border border-white/10 bg-void px-3 py-3 font-serif text-base text-paper outline-none focus:border-line" placeholder="I want a first page for ___ that does ___ for ___."></textarea>
+          <button type="submit" class="mt-4 w-full bg-heat px-4 py-3 font-display text-sm uppercase tracking-[0.2em] text-paper hover:brightness-110">Send the brief</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/5">
+    <div class="mx-auto flex max-w-5xl flex-col gap-3 px-5 py-8 sm:flex-row sm:items-center sm:justify-between">
+      <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-mist">FRONT ROOM · a REDLINE first-draft · client-owned file</p>
+      <p class="font-mono text-[11px] uppercase tracking-[0.22em] text-mist">Nobody rents the words back to you</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.2/lib/anime.min.js"></script>
+  <script>
+    function sendBrief(e) {
+      e.preventDefault();
+      var text = document.getElementById("para").value.trim();
+      if (!text) return false;
+      var body = "FRONT ROOM brief%0A%0A" + encodeURIComponent(text);
+      window.location.href = "mailto:citruswill2@gmail.com?subject=" + encodeURIComponent("FRONT ROOM brief") + "&body=" + body;
+      return false;
+    }
+    function runReveal() {
+      var nodes = document.querySelectorAll(".reveal");
+      if (window.anime) {
+        window.anime({
+          targets: nodes,
+          opacity: [0, 1],
+          translateY: [14, 0],
+          delay: window.anime.stagger(70),
+          duration: 380,
+          easing: "easeOutQuad"
+        });
+      } else {
+        nodes.forEach(function (n) { n.style.opacity = "1"; n.style.transform = "none"; });
+      }
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", runReveal);
+    } else {
+      runReveal();
+    }
+  </script>
+</body>
+</html>

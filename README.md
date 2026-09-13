@@ -1,2 +1,3 @@
-# front-room
-FRONT ROOM — first pages for people starting a business, plus a night window that promotes other live websites. REDLINE first-draft, client-owned single HTML.
+FRONT ROOM — REDLINE first-draft.
+
+Drop `index.html` at the root of a Vercel project. No build step. Client-owned file.
